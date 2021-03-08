@@ -50,6 +50,9 @@ def extract():
 	SDataframe = selection(SDataframe)
 	BDataframe = selection(BDataframe)
 
+	SDataframe["classID"] = 1.0
+	BDataframe["classID"] = 0.0
+
 	return SDataframe, BDataframe
 
 
